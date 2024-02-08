@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>복습 예제 02</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <style>
+    table, td, th {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+  </style> -->
+</head>
+<body>
+  <!-- 
+    시맨틱 태그 사용
+    : header, nav, section, footer
+
+    1. header
+    : 메인 제목(h1)
+    : 설명(p)
+
+    2. nav
+    : 순서가 없는 리스트 생성
+    : 각 섹션과 id로 연결되는 링크
+
+    3. section
+    : 교육, 경력, 취미, 연락처, 기술 스킬, 일정
+    : 각 섹션 제목(h2)
+    : 강조 요소(strong)
+
+    4. footer
+    : 특수 기호 문자 (저작권)
+    : | vertical vat
+      (shift + \)
+  -->
+  <header>
+    <h1>🤟 신지영의 포트폴리오 🤟</h1>
+    <p> 웹 개발자 & 디자이너 </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#education">교육</a></li>
+      <li><a href="#experiance">경력</a></li>
+      <li><a href="#hobby">취미</a></li>
+      <li><a href="#call">연락처</a></li>
+      <li><a href="#skill">기술 스킬</a></li>
+      <li><a href="#schedule">일정 표</a></li>
+    </ul>
+  </nav>
+
+  <section id="education">
+    <h2>🎓 교육</h2>
+      <p><strong>동아대학교 체육학과 재학 및 휴학 예정</strong></p>
+      <p>신체의 구성요소와 작동 원리에 대하여 공부하였고, 교직 이수를 목표로 두고 있습니다.</p>
+  </section>
+
+  <section id="experience">
+    <h2>💼 경력</h2>
+      <p>음식점, 카페 알바와 서핑 코치로 근무</p>
+      <table>
+        <tr>
+          <th>연도</th>
+          <th>근무처</th>
+          <th>직위</th>
+        </tr>
+        <tr>
+          <td>2022.06-2022.08</td>
+          <td>서프홀릭</td>
+          <td>주말 코치</td>
+        </tr>
+        <tr>
+          <td>2022.12-2023.11</td>
+          <td>소림마라</td>
+          <td>아르바이트</td>
+        </tr>
+        <tr>
+          <td>2023.09-2024.01</td>
+          <td>투썸플레이스</td>
+          <td>스텝</td>
+        </tr>
+      </table>
+      <p> 다양한 직종의 알바 경험을 통해 여러가지 경험을 쌓을 수 있었고, 손님 응대를 확실하게 배우게 되었습니다.</p>
+  </section>
+
+  <section id="hobby">
+    <h2>🎶 취미</h2>
+    <p> 음악 감상, 노래, 춤</p>
+    <p> 좋아하는 아이돌의 노래를 듣는 것과 춤 커버하는 것을 좋아합니다.</p>
+  </section>
+
+  <section id="call">
+    <h2>📞 연락처</h2>
+    <p>
+      이메일:
+      <a href="mailto:starat6742@naver.com">starat6742@naver.com</a>
+      ✉️
+    </p>
+    <p> 전화번호 : 010-5535-0406📱</p>
+  </section>
+
+  <section id="skill">
+    <h2>👩‍💻 기술 스킬</h2>
+    <ol type="A">
+      <li>Java</li>
+      <li>Python</li>
+      <li>HTML</li>
+    </ol>
+  </section>
+
+  <section id="schedule">
+    <h2>📅 일정 표</h2>
+    <table border="1" >
+      <tr>
+        <th>시간</th>
+        <th>월요일</th>
+        <th>화요일</th>
+        <th>수요일</th>
+        <th>목요일</th>
+        <th>금요일</th>
+      </tr>
+      <tr>
+        <td>09:00-10:00</td>
+        <td rowspan="2">프로젝트 회의</td>
+        <td>이메일 확인</td>
+        <td rowspan="3">코드 리뷰</td>
+        <td>문서 작업</td>
+        <td>이메일 확인</td>
+      </tr>
+      <tr>
+        <td>10:00-11:00</td>
+        <td>문서 작업</td>
+        <td>팀 미팅</td>
+        <td>개발 작업</td>
+      </tr>
+      <tr>
+        <td>11:00-12:00</td>
+        <td colspan="2">워크숍</td>
+        <td>개발 작업</td>
+        <td>이메일 확인</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 신지영. 모든 권리 보유.</p>
+    <span>저를 찾아보세요: <a href="https://github.com/JJJI0">GitHup</a></span>
+    <span> | </span>
+    <span><a href="#">Linkedln</a></span>
+  </footer>
+</body>
+</html>
